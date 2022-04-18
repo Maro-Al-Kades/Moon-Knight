@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Knight</title>
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon Of Website -->
+    <link rel="icon" href="media/icons/تالتالت.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header  -->
+    <header>
+        <a href="#" class="logo"><img src="./media/images/llogo.png"></a>
+        <a href="ar.html" class="ar">AR</a>
+    </header>
+    <!-- End Header  -->
+    <!-- Start Banner -->
+    <div class="banner">
+        <div class="content">
+            <h2>I became  
+                <span>Moon Knight</span> to battle evil.</h2>
+            <p> wherever I could find it And I never had to look farther than the darkness inside my own heart. I am Moon Knight. The bearer of the mantle of Khonshu.</p>
+            <a href="https://www.youtube.com/watch?v=zAGVQLHvwOY&t=5s" class="play" onclick="toggle();"><img src="./media/icons/play.png">Watch Trailer</a>
+            <div class="slide">
+                <h3><a href="https://www.facebook.com/romany.victor.71" target="_blank">Designed By  Romany Victor</a></h3>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="./media/icons/facebook.png"></a></li>
+                <li><a href="#"><img src="./media/icons/instagram.png"></a></li>
+                <li><a href="#"><img src="./media/icons/twitter.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="media/video/trailer.mp4" controls></video>
+        <img src="./media/icons/close.png" class="close" onclick="toggle();">
+    </div>
+    <!-- End Banner -->
+    <!-- Start Script -->
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause = 0;
+        }
+    </script>
+    <!-- End Script -->
+</body>
+</html>
